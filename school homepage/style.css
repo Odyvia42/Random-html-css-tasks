@@ -1,0 +1,199 @@
+/* General setup */
+
+@font-face {
+    font-family: 'alex_brushregular';
+    src: url('webfontkit/alexbrush-regular-webfont.woff2') format('woff2'),
+         url('webfontkit/alexbrush-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'fira_sansbook';
+    src: url('webfontkit/firasans-book-webfont.woff2') format('woff2'),
+         url('webfontkit/firasans-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+font-size: 10px;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+
+h1, h2 {
+  font-family: 'alex_brushregular';
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3rem;
+  }
+  
+body {
+  line-height: 1.5;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  }
+
+p, ul, ol {
+  font-family: 'fira_sansbook';
+  font-size: 1.5rem;
+}
+section h2 + p {
+  text-indent: 20px;
+  }
+  
+ a[href^="http"] {
+  background: url('External_link_font_awesome.svg.png') no-repeat 100% 0;
+  background-size: 16px 16px;
+  padding-right: 19px;
+  }
+  
+  
+ a {
+   text-decoration: underline;
+   }
+  
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: indigo;
+  outline: none;
+}
+
+a:focus {
+  background-color: orange;
+  color: black;
+  text-decoration: none;
+
+}
+
+a:hover {
+  background-color: orange;
+  color: black;
+  text-decoration: none;
+}
+
+a:active {
+  background-color: green;
+  color: white;
+}
+
+section ul li {
+  list-style: none;
+  background-color: white;
+  background-image: url("list-bullet-1.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding-left: 3rem; 
+  background-size: 2rem;
+}
+
+aside ul li {
+  list-style: none;
+  
+  background-image: url("list-bullet-star.png");
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  padding-left: 3rem; 
+  background-size: 3rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  line-height: 5;
+  }
+ 
+ nav a {
+ display: inline-block;
+ width: 100%;
+ outline: none;
+ text-decoration: none;
+ text-align: center;
+ line-height: 3rem;
+ border: 2px solid firebrick;
+ padding: 1rem;
+  }
+ 
+nav a:link {
+  color: blue;
+}
+
+nav a:visited {
+  color: indigo;
+  outline: none;
+}
+nav a:hover,
+nav a:focus {
+   background-color: orange;
+   border: 5px ridge green;
+ }
+
+ nav a:active {
+  background-color: green;
+  color: white;
+  }
+footer p {
+  text-align: center;
+  }
